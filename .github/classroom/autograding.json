@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Test VPN",
+      "setup": "git submodule update --init --recursive && mkdir -p build && cd build && cmake .. && make -j 4",
+      "run": "cd build/hw2_src/tests && ./test_vpn",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": null
+    }
+  ]
+}
