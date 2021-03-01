@@ -1,0 +1,6 @@
+[submodule "src/hw2_src"]
+	path = src/hw2_src
+	url = https://github.com/ProfessorBienz/hw2_src.git
+[submodule "hw2_src"]
+	path = hw2_src
+	url = https://github.com/ProfessorBienz/hw2_src.git
