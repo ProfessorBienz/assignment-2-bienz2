@@ -9,6 +9,66 @@
       "comparison": "included",
       "timeout": 2,
       "points": null
+    },
+    {
+      "name": "TestTLB",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_tlb",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": null
+    },
+    {
+      "name": "TestTable",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_table",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": null
+    },
+    {
+      "name": "TestPFN",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_pfn",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": null
+    },
+    {
+      "name": "TestLRU",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_lru",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": null
+    },
+    {
+      "name": "Test FIFO",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_fifo",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": null
+    },
+    {
+      "name": "Test Clock Approx LRU",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_clock_lru",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": null
     }
   ]
 }
