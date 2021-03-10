@@ -168,7 +168,7 @@
       "output": "",
       "comparison": "included",
       "timeout": 2,
-      "points": 5
+      "points": 10
     },
     {
       "name": "FIFO correct number of steps",
@@ -178,7 +178,7 @@
       "output": "",
       "comparison": "included",
       "timeout": 2,
-      "points": 5
+      "points": 10
     },
     {
       "name": "LRU Correct Removal",
@@ -188,7 +188,7 @@
       "output": "",
       "comparison": "included",
       "timeout": 2,
-      "points": 5
+      "points": 10
     },
     {
       "name": "LRU Correct Number of Steps",
@@ -198,7 +198,7 @@
       "output": "",
       "comparison": "included",
       "timeout": 2,
-      "points": 5
+      "points": 10
     },
     {
       "name": "Clock LRU Correct Removal",
@@ -208,7 +208,7 @@
       "output": "",
       "comparison": "included",
       "timeout": 2,
-      "points": 5
+      "points": 10
     },
     {
       "name": "Clock LRU Correct Number of Steps",
@@ -218,7 +218,7 @@
       "output": "",
       "comparison": "included",
       "timeout": 2,
-      "points": 5
+      "points": 10
     },
     {
       "name": "Virtual Address to Physical Address Test 2",
