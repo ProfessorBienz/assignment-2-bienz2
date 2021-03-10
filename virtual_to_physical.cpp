@@ -2,9 +2,8 @@
 
 #define BITS_PER_BYTE 8
 
-// Return the virtual page number associated with the given virtual address
+// Return the virtual page number and offset associated with the given virtual address
 //      - page_size : size of pages
-//      - addr_bits : number of bits in virtual address
 void split_virtual_address(int virtual_address, int page_size, int* VPN, int* offset)
 {
     int offset_bits = log2(page_size);
@@ -138,7 +137,7 @@ int virtual_to_physical(int virtual_address, int page_size, TLB* tlb, PageTable*
     }
     catch (const char* msg)
     {
-        if (std::string(msg) == "TLB Miss")
+        if (std::string(msg) == "TLB Miss!")
             pfn = table_lookup(table, tlb, vpn);
         else throw (msg);
     }
