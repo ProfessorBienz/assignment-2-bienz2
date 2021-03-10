@@ -151,9 +151,9 @@
       "points": 5
     },
     {
-      "name": "Virtual Address to Physical Address",
+      "name": "Virtual Address to Physical Address Test 1",
       "setup": "",
-      "run": "cd build/hw2_src/tests && ./test_virtual_to_physical",
+      "run": "cd build/hw2_src/tests && ./test_virtual_to_physical1",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -214,6 +214,46 @@
       "name": "Clock LRU Correct Number of Steps",
       "setup": "",
       "run": "cd build/hw2_src/tests && ./test_clock_lru_steps",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "Virtual Address to Physical Address Test 2",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_virtual_to_physical2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "Virtual Address to Physical Address Test 3",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_virtual_to_physical3",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "Virtual Address to Physical Address Test 4",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_virtual_to_physical4",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "Virtual Address to Physical Address Test 5",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_virtual_to_physical5",
       "input": "",
       "output": "",
       "comparison": "included",
