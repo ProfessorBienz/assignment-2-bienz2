@@ -1,14 +1,224 @@
 {
   "tests": [
     {
-      "name": "Test VPN",
-      "setup": "git submodule update --init --recursive && mkdir -p build && cd build && cmake .. && make -j 4",
+      "name": "Extract VPN from address",
+      "setup": "git submodule update --init --recursive && git submodule update --remote --merge && rm -rf build && mkdir -p build && cd build && cmake .. && make -j 4",
       "run": "cd build/hw2_src/tests && ./test_vpn",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 2,
-      "points": null
+      "points": 5
+    },
+    {
+      "name": "Extract offset from address",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_offset",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "Extract TLB index from VPN",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_tlb_index",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "Extract TLB tag from VPN",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_tlb_tag",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "TLB Miss if not in VPN",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_tlb_miss",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "TLB Protection Fault ",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_tlb_protection",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "TLB lookup correct PFN",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_tlb_pfn",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "TLB correct order of faults",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_tlb",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "Page Table Seg Fault",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_table_seg",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "Page Table Protection Fault",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_table_protect",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "Page Table Page Fault",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_table_page",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "Page Table Lookup returns correct PFN",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_table_pfn",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "Page Table Lookup adds entry to TLB",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_table_to_tlb",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "Page Table correct order of faults",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_table",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "Convert PFN and Offset to Address",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_addr",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "Virtual Address to Physical Address",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_virtual_to_physical",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "FIFO Correct Removal",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_fifo",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "FIFO correct number of steps",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_fifo_steps",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "LRU Correct Removal",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_lru",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "LRU Correct Number of Steps",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_lru_steps",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "Clock LRU Correct Removal",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_clock_lru",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "Clock LRU Correct Number of Steps",
+      "setup": "",
+      "run": "cd build/hw2_src/tests && ./test_clock_lru_steps",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
     }
   ]
 }
