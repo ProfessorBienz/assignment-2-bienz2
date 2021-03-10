@@ -2,7 +2,7 @@
   "tests": [
     {
       "name": "Extract VPN from address",
-      "setup": "git submodule update --init --recursive && rm -rf build && mkdir -p build && cd build && cmake .. && make -j 4",
+      "setup": "git submodule update --init --recursive && git submodule update --remote --merge && rm -rf build && mkdir -p build && cd build && cmake .. && make -j 4",
       "run": "cd build/hw2_src/tests && ./test_vpn",
       "input": "",
       "output": "",
